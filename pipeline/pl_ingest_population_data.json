@@ -13,7 +13,7 @@
 						"type": "DatasetReference"
 					},
 					"timeout": "0.00:00:30",
-					"sleep": 3,
+					"sleep": 1,
 					"minimumSize": 1024
 				}
 			},
@@ -35,6 +35,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
 						"referenceName": "ds_population_raw_gz",
@@ -56,7 +57,7 @@
 				}
 			},
 			{
-				"name": "If column count matches",
+				"name": "If Count Column Matches",
 				"type": "IfCondition",
 				"dependsOn": [
 					{
@@ -84,9 +85,14 @@
 								"secureOutput": false,
 								"secureInput": false
 							},
-							"userProperties": [],
+							"userProperties": [
+								{
+									"name": "Mouhameth Takha Faye",
+									"value": "tahafaye@hotmail.com"
+								}
+							],
 							"typeProperties": {
-								"url": "https://fike_incompatible",
+								"url": "https://file_incompatible",
 								"method": "POST",
 								"body": "dummy"
 							}
