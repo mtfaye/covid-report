@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Check If File Exist",
+				"name": "Check If File Exists",
 				"type": "Validation",
 				"dependsOn": [],
 				"userProperties": [],
@@ -22,7 +22,7 @@
 				"type": "GetMetadata",
 				"dependsOn": [
 					{
-						"activity": "Check If File Exist",
+						"activity": "Check If File Exists",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -72,6 +72,26 @@
 						"value": "@equals(activity('Get File Metadata').output.columnCount, 13)",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "Send Email",
+							"type": "WebActivity",
+							"dependsOn": [],
+							"policy": {
+								"timeout": "7.00:00:00",
+								"retry": 0,
+								"retryIntervalInSeconds": 30,
+								"secureOutput": false,
+								"secureInput": false
+							},
+							"userProperties": [],
+							"typeProperties": {
+								"url": "https://fike_incompatible",
+								"method": "POST",
+								"body": "dummy"
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "Copy Population Data",
