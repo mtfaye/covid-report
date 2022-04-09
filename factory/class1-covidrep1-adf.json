@@ -1,0 +1,9 @@
+{
+	"name": "class1-covidrep1-adf",
+	"location": "canadaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "73a3c387-3490-40d0-bfa8-febfb393fca7",
+		"tenantId": "5b973f99-77df-4beb-b27d-aa0c70b8482c"
+	}
+}
