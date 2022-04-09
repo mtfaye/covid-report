@@ -48,6 +48,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -137,6 +138,164 @@
 								"enableStaging": false,
 								"translator": {
 									"type": "TabularTranslator",
+									"mappings": [
+										{
+											"source": {
+												"name": "indic_de,geo\\time",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "indic_de,geo\\time",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2008 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2008 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2009 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2009 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2010 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2010 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2011 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2011 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2012 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2012 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2013 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2013 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2014 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2014 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2015 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2015 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2016 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2016 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2017 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2017 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2018 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2018 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										},
+										{
+											"source": {
+												"name": "2019 ",
+												"type": "String",
+												"physicalType": "String"
+											},
+											"sink": {
+												"name": "2019 ",
+												"type": "String",
+												"physicalType": "String"
+											}
+										}
+									],
 									"typeConversion": true,
 									"typeConversionSettings": {
 										"allowDataTruncation": true,
@@ -158,7 +317,7 @@
 							]
 						},
 						{
-							"name": "Delete Source File ",
+							"name": "Delete Source Fiele",
 							"type": "Delete",
 							"dependsOn": [
 								{
