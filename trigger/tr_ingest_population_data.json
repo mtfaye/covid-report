@@ -13,7 +13,7 @@
 		],
 		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"blobPathBeginsWith": "/populationbyage/blobs/population_by_age_.tsz.gz",
+			"blobPathBeginsWith": "/populationbyage/blobs/population_by_age.tsz.gz",
 			"ignoreEmptyBlobs": true,
 			"scope": "/subscriptions/37c915e8-ba5e-47f7-b26b-f7f5a9724369/resourceGroups/adfclass-covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/class1covidrepsa",
 			"events": [
