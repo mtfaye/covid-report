@@ -14,6 +14,9 @@
 		"ls_adls_covidreportingdl_properties_typeProperties_url": {
 			"value": "https://class1covidrepdl.dfs.core.windows.net"
 		},
+		"tr_ingest_population_data_properties_typeProperties_scope": {
+			"value": "/subscriptions/37c915e8-ba5e-47f7-b26b-f7f5a9724369/resourceGroups/adfclass-covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/class1covidrepsa"
+		},
 		"containerUri": {
 			"value": ""
 		},
