@@ -738,16 +738,9 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2022-04-18T23:11:00",
+						"startTime": "2022-04-18T23:15:00",
 						"timeZone": "Eastern Standard Time",
-						"schedule": {
-							"minutes": [
-								11
-							],
-							"hours": [
-								23
-							]
-						}
+						"schedule": {}
 					}
 				}
 			},
