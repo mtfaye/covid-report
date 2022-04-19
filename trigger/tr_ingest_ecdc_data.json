@@ -3,14 +3,21 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Started",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2022-04-18T23:58:00Z",
-				"timeZone": "UTC"
+				"startTime": "2022-04-18T23:58:00",
+				"timeZone": "Eastern Standard Time"
 			}
 		}
 	}
